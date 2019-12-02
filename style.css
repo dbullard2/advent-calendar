@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+body, html {
+  overflow:hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Lato';
+  font-weight: 700;
+  font-size: 30px;
+  color: #34A65F;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.color:nth-child(1){
+  background-color: #F5624D;
+}
+
+.color:nth-child(2){
+  background-color: #CC231E;
+}
+
+.color:nth-child(3){
+  background-color: #34A65F;
+}
+
+.color:nth-child(4){
+  background-color: #0F8A5F;
+}
+
+.color:nth-child(5){
+  background-color: #235E6F;
+}
+
+.sky{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #34A65F;
+}
+
+.calendar{
+    width: 90%;
+    height: 90%;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+.month{
+    height: 12%;
+    width: 100%;
+    top: 0;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cc231e;
+    border-bottom: 2px solid white;
+    /*background-color: red;
+    background-image: linear-gradient(
+        -45deg,
+        white 25%,
+        transparent 25.5%,
+        transparent 50%,
+        white 50.5%,
+        white 75%,
+        transparent 75.5%,
+        transparent
+    );
+    background-size: 20px 20px;*/
+}
+
+.month h1{
+    margin: 0;
+    padding: 0;
+}
+
+.week-day, .date-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.week-day{
+    text-align: center;
+}
+
+.date-grid{
+    height: 80%;
+    grid-gap: 1px;
+}
+
+button:nth-child(24){
+  color: #cc231e !important;
+}
+
+
+.date-grid button{
+    position: relative;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    border: none;
+    z-index: 2;
+}
+
+.date-grid button:hover{
+  outline: 3px solid #cc231e;
+}
+
+.after{
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content{
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  border-radius: 15px;
+  border: 3px solid #cc231e;
+}
+
+.modal-content p{
+  margin-left: 1%;
+  margin-top: 1%;
+  color: black;
+  font-size: 20px;
+}
+
+.modal-content img{
+  width: 100%;
+}
+
+#one{
+  text-align: center;
+}
+
+#one button{
+  border: 3px solid #235E6F;
+  border-radius: 5px;
+  background-color: white;
+  width: 150px;
+  height: 75px;
+  margin-top: 10%;
+  font-size: 20px;
+}
+
+#one button:hover{
+  border: 3px solid #cc231e;
+}

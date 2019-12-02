@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
   </head>
   <body>
+      <!--add ability to save postcard, maybe add more destinations / designs-->
     <main>
         <div class="postcard">
             <div class="postcard-inner">
@@ -16,10 +17,10 @@
                     <img src="img/stamp2.png.webp" alt="">
                     <div class="address">
                         <input type="text" placeholder="Name">
-                        <input type="text" placeholder="Address">
-                        <input type="text" placeholder="Zip Code">
-                        <input type="text" placeholder="State">
-                        <input type="text" placeholder="Country">
+                        <input type="text" placeholder="Address" id="street-address">
+                        <input type="text" placeholder="City" id="city">
+                        <input type="text" placeholder="Zip Code" id="zip">
+                        <input type="text" placeholder="State" id="state">
                     </div>
                     <div class="message">
                         <textarea name="message" placeholder="Your message goes here..." cols="30" rows="10" id="output"></textarea>
@@ -30,7 +31,7 @@
         <img src="img/information.svg" alt="" id="info" onclick="popup()">
         <div class="modal" id="myModal">
             <div class="modal-content">
-                <p>Day 1 of 25 of my 2019 advent calendar: a simple postcard maker with address verification.</p>
+                <p>Day 1 of 25 of my 2019 advent calendar: a simple postcard maker.</p>
                 <p>Art credit - </p>
                 <br>
                 <p>- "Arizona Postcard" by <a href="https://dribbble.com/NCatalfamoDesigns" target="_blank">Nick Catalfamo</a></p>
