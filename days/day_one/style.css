@@ -1,0 +1,167 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: #e1e9ff;
+    font-size: 30px;
+}
+
+@font-face{
+    font-family: "wild";
+    src: url("run_wild-webfont.woff");
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-family: "wild";
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.postcard{
+    width: 57.2%;
+    height: 90%;
+    /*background-image: url("img/arizonapostcard-dribbble.jpg");*/
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.postcard-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.postcard:hover .postcard-inner{
+    transform: rotateY(180deg);
+}
+
+.postcard-front, .postcard-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2px solid black;
+}
+
+.postcard-back{
+    background: #fff linear-gradient(#000, #000) no-repeat center/2px 100%;
+    color: black;
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.postcard-back img{
+    position: absolute;
+    width: 10%;
+    top: 0;
+    right: 0;
+}
+
+.postcard-front{
+    background-image: url("img/arizonapostcard-dribbble.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.address{
+    width: 30%;
+    height: 75%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 15%;
+    text-align: left;
+    font-size: 30px;
+    margin-right: 2%;
+}
+
+.address input{
+    height: 30px;
+    width: 99%;
+    border: none;
+    font-family: "wild";
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20%;
+}
+
+input::placeholder{
+    font-family: "wild";
+    font-size: 30px;
+}
+
+.message{
+    width: 50%;
+    height: 100%;
+}
+
+textarea{
+    font-family: "wild";
+    font-size: 30px;
+    width: 99%;
+    height: 99%;
+    border: none;
+    resize: none;
+}
+
+#info{
+    position: absolute;
+    width: 2%;
+    bottom: 0;
+    right: 0;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
+    border-radius: 15px;
+    border: 3px solid black;
+  }
+  
+  .modal-content p{
+    margin-left: 1%;
+    margin-top: 1%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px !important;
+  }
+
+  a{
+      color: #000;
+  }
